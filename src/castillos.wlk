@@ -177,7 +177,8 @@ object wwwtodoscastilloscom {
 
     method informacion() = castillos.filter{ x => x.estabilidad() < 125 }  
     
-
+    method derrotados() = castillos.filter{ x => x.estabilidad( ) < 100 }
+    
     method capacidad() {
         return castillos.filter{ x => x.guardiasSuma() < 300 }
     }
